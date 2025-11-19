@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bCult | Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="paper-texture">
+
+    <div id="page-transition"></div>
+
+    <nav class="navbar sketch-border">
+        <div class="logo">bCult<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-link>Home</a></li>
+            <li><a href="projects.html" data-link>Collections</a></li>
+            <li><a href="about.html" data-link>Origins</a></li>
+            <li><a href="contact.html" class="active" data-link>Contact</a></li>
+        </ul>
+        <button id="theme-toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg></button>
+        <div class="mobile-menu-btn">☰</div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="index.html" data-link>Home</a>
+        <a href="projects.html" data-link>Collections</a>
+        <a href="about.html" data-link>Origins</a>
+        <a href="contact.html" data-link>Contact</a>
+        <button class="close-menu">✕</button>
+    </div>
+
+    <main class="container form-container">
+        <h1>INITIATE PROTOCOL</h1>
+        <p>Ready for the transformation? Leave your details.</p>
+
+        <form id="contact-form" class="sketch-border" novalidate>
+            
+            <div class="form-group">
+                <label for="name">CODENAME / NAME</label>
+                <input type="text" id="name" name="name" required placeholder="e.g. John Doe">
+                <span class="error-msg">Required</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">COMM CHANNEL / EMAIL</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                <span class="error-msg">Invalid Email</span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">BRIEFING / MESSAGE</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+                <span class="error-msg">Required</span>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to bCult Intel (Newsletter)</label>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" id="save-draft" class="btn btn-outline">Save Draft</button>
+                <button type="button" id="clear-draft" class="btn btn-text">Clear</button>
+                <button type="submit" class="btn btn-primary">TRANSMIT</button>
+            </div>
+            
+            <div id="form-status" aria-live="polite"></div>
+        </form>
+
+        <div class="scrap scrap-1"></div>
+        <div class="scrap scrap-2"></div>
+
+    </main>
+
+    <footer class="sketch-border-top">
+        <p>&copy; 2025 bCult.</p>
+        <button id="scroll-top">▲</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

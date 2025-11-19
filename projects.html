@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bCult | Collections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="paper-texture">
+
+    <div id="page-transition"></div>
+
+    <nav class="navbar sketch-border">
+        <div class="logo">bCult<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" data-link>Home</a></li>
+            <li><a href="projects.html" class="active" data-link>Collections</a></li>
+            <li><a href="about.html" data-link>Origins</a></li>
+            <li><a href="contact.html" data-link>Contact</a></li>
+        </ul>
+        <button id="theme-toggle">
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+        </button>
+        <div class="mobile-menu-btn">☰</div>
+    </nav>
+    
+    <div class="mobile-menu">
+        <a href="index.html" data-link>Home</a>
+        <a href="projects.html" data-link>Collections</a>
+        <a href="about.html" data-link>Origins</a>
+        <a href="contact.html" data-link>Contact</a>
+        <button class="close-menu">✕</button>
+    </div>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>THE ARCHIVES</h1>
+            <p>Curated looks for the modern protagonist.</p>
+        </header>
+
+        <div class="controls sketch-border">
+            <input type="text" id="search-input" placeholder="Search styles..." aria-label="Search projects">
+            <select id="filter-select" aria-label="Filter by category">
+                <option value="all">All Categories</option>
+                <option value="formal">Formal</option>
+                <option value="street">Streetwear</option>
+                <option value="grooming">Grooming</option>
+            </select>
+        </div>
+
+        <div class="projects-grid" id="projects-container">
+            </div>
+    </main>
+
+    <footer class="sketch-border-top">
+        <p>&copy; 2025 bCult.</p>
+        <button id="scroll-top">▲</button>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-close-modal></div>
+        <div class="modal-content sketch-border paper-texture">
+            <button class="close-modal-btn" data-close-modal>×</button>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div class="modal-tags" id="modal-tags"></div>
+                <div class="modal-desc" id="modal-desc"></div>
+                <div class="modal-visual">
+                    <svg viewBox="0 0 200 150" class="sketch-placeholder">
+                        <rect x="10" y="10" width="180" height="130" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+                        <text x="100" y="80" text-anchor="middle" fill="currentColor">STYLE BLUEPRINT</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Embedded Project Data
+        window.PROJECTS = [
+            { id: 1, title: "The Midnight Tux", category: "formal", desc: "A razor-sharp silhouette for evening galas. Velvet accents, tapered fit.", tags: ["Suit", "Evening", "Black"] },
+            { id: 2, title: "Tokyo Drift Fade", category: "grooming", desc: "Precision fade with textured top. Inspired by Shibuya street style.", tags: ["Hair", "Fade", "Texture"] },
+            { id: 3, title: "Concrete Jungle", category: "street", desc: "Oversized layers, tactical fabrics, and chunky soles for the urban nomad.", tags: ["Techwear", "Layering"] },
+            { id: 4, title: "Corporate Raider", category: "formal", desc: "Power suits reimagined. Double-breasted, pinstripe, aggressive tailoring.", tags: ["Business", "Power"] },
+            { id: 5, title: "Sunday Cafe", category: "street", desc: "Relaxed linens and soft knits. The ultimate off-duty look.", tags: ["Casual", "Beige"] },
+            { id: 6, title: "Beard Sculpting", category: "grooming", desc: "Hot towel treatment and precision razor lining for the perfect jawline.", tags: ["Beard", "Spa"] }
+        ];
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

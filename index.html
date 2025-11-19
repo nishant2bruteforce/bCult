@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bCult | Men's Styling</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Complete styling for men - Haircut, Dressing, Shoes, Personality.">
+</head>
+<body class="paper-texture">
+
+    <div id="preloader">
+        <div class="spinner"></div>
+        <p class="loading-text">INKING...</p>
+    </div>
+
+    <div id="page-transition"></div>
+
+    <nav class="navbar sketch-border" aria-label="Main Navigation">
+        <div class="logo">bCult<span class="accent">.</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active" data-link>Home</a></li>
+            <li><a href="projects.html" data-link>Collections</a></li>
+            <li><a href="about.html" data-link>Origins</a></li>
+            <li><a href="contact.html" data-link>Contact</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+        </button>
+        <div class="mobile-menu-btn" aria-label="Menu" tabindex="0">☰</div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="index.html" data-link>Home</a>
+        <a href="projects.html" data-link>Collections</a>
+        <a href="about.html" data-link>Origins</a>
+        <a href="contact.html" data-link>Contact</a>
+        <button class="close-menu">✕</button>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text" data-text="REDEFINE YOUR SILHOUETTE">REDEFINE YOUR <br><span class="accent">SILHOUETTE</span></h1>
+                <p class="hero-sub">Complete styling engineering for men. From the fade to the sole.</p>
+                <div class="cta-group">
+                    <a href="projects.html" class="btn btn-primary" data-link>Explore Styles</a>
+                    <a href="contact.html" class="btn btn-outline" data-link>Book Session</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" id="desk-scene">
+                <svg viewBox="0 0 500 500" class="sketch-svg" aria-label="Messy creative desk illustration">
+                    <rect x="50" y="100" width="200" height="250" transform="rotate(-5 150 225)" class="svg-paper parallax-layer" data-speed="0.02" />
+                    <rect x="70" y="120" width="200" height="250" transform="rotate(3 170 245)" class="svg-paper parallax-layer" data-speed="0.03" />
+                    
+                    <g class="parallax-layer" data-speed="0.05">
+                        <circle cx="350" cy="300" r="40" class="svg-stroke" />
+                        <path d="M390 300 Q 410 300 410 320 Q 410 340 390 340" class="svg-stroke" fill="none" />
+                        <path d="M330 290 Q 350 295 370 290" class="svg-stroke" fill="none" /> <path d="M340 260 Q 350 240 360 260" class="svg-steam" fill="none" />
+                    </g>
+
+                    <line x1="400" y1="400" x2="250" y2="450" class="svg-stroke parallax-layer" data-speed="0.08" stroke-width="8" stroke-linecap="round" />
+                    
+                    <g class="parallax-layer" data-speed="0.06">
+                        <circle cx="200" cy="400" r="25" class="svg-stroke" fill="none"/>
+                        <circle cx="280" cy="390" r="25" class="svg-stroke" fill="none"/>
+                        <line x1="225" y1="400" x2="255" y2="390" class="svg-stroke" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section class="stats-panel sketch-border">
+            <div class="stat-box">
+                <h2 class="counter" data-target="150">0</h2>
+                <p>Styles Curated</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter" data-target="45">0</h2>
+                <p>Brand Partners</p>
+            </div>
+            <div class="stat-box">
+                <h2 class="counter" data-target="100">0</h2>
+                <p>% Satisfaction</p>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="section-header">
+                <h3>LATEST CUTS</h3>
+                <div class="line-fill"></div>
+            </div>
+            <div class="grid-container" id="featured-grid">
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="sketch-border-top">
+        <p>&copy; 2025 bCult. Designed for the bold.</p>
+        <button id="scroll-top" aria-label="Back to top">▲</button>
+    </footer>
+
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" tabindex="-1" data-close-modal></div>
+        <div class="modal-content sketch-border paper-texture">
+            <button class="close-modal-btn" aria-label="Close Modal" data-close-modal>×</button>
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <div class="modal-tags" id="modal-tags"></div>
+                <div class="modal-desc" id="modal-desc"></div>
+                <div class="modal-visual">
+                    <svg viewBox="0 0 200 150" class="sketch-placeholder">
+                        <rect x="10" y="10" width="180" height="130" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="5,5"/>
+                        <text x="100" y="80" text-anchor="middle" fill="currentColor">STYLE PREVIEW</text>
+                    </svg>
+                </div>
+                <button class="btn btn-primary full-width" data-close-modal>Close File</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
